@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerViewGita</string>
+    <string name="nameFriend">friendName</string>
+    <string name="ttlFriend">ttlFriend</string>
+    <string name="alamatFriend">alamatFriend</string>
+    <string name="hobi_Friend">friendHobi</string>
+    <string name="hobi">hobi</string>
+</resources>

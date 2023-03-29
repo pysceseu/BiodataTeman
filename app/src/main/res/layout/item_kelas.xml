@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/img_friend"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_friend"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="@string/nameFriend" />
+
+        <TextView
+            android:id="@+id/tv_item_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/img_friend"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/alamatFriend" />
+
+        <TextView
+            android:id="@+id/tv_item_ttl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_alamat"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/img_friend"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/ttlFriend" />
+
+        <TextView
+            android:id="@+id/tv_item_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_ttl"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_friend"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/hobi" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
